@@ -286,7 +286,7 @@ class _DefaultMessageDelegate(httputil.HTTPMessageDelegate):
 
 # _RuleList can either contain pre-constructed Rules or a sequence of
 # arguments to be passed to the Rule constructor.
-_RuleList = List[
+_RuleList = Sequence[
     Union[
         "Rule",
         List[Any],  # Can't do detailed typechecking of lists.
